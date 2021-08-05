@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Algorithm Test</title>
+   
+    First number:<input id="number 1" type="number"> <br />
+    Second number:<input id="number 2" type="number"> <br />
+    Third number: <input id="number 3" type="number"> <br />
+    Fourth number: <input id="number 4" type="number"> <br />
+    Fifth number: <input id="number 5" type="number"> <br />
+
+    <button onclick="greater()">Greater</button>
+    <button onclick="Smaller()">Smaller</button>
+    <button onclick="sumValues()">sumValues</button>
+    <button onclick="pairODD()">pairODD</button>
+    <BUTton onclick="isPrime()">isPrime</button>
+
+    <script type="text/javascript">
+     function greater(){
+       var n1 = parseFloat(document.getElementById("number 1").value);
+       var n2 = parseFloat(document.getElementById("number 2").value);
+       var n3 = parseFloat(document.getElementById("number 3").value);
+       var n4 = parseFloat(document.getElementById("number 4").value);
+       var n5 = parseFloat(document.getElementById("number 5").value);
+       
+
+       var greater = n1;
+
+       if(n2 > greater)
+        greater = n2;
+       if(n3 > greater)
+        greater = n3;
+       if(n4 > greater)
+        greater = n4;
+       if(n5 > greater)
+        greater = n5; 
+
+
+       alert("The greater number is: "+greater);
+     }
+
+
+    function Smaller(){
+       var n1 = parseFloat(document.getElementById("number 1").value);
+       var n2 = parseFloat(document.getElementById("number 2").value);
+       var n3 = parseFloat(document.getElementById("number 3").value);
+       var n4 = parseFloat(document.getElementById("number 4").value);
+       var n5 = parseFloat(document.getElementById("number 5").value);
+
+       var Smaller = n1;
+
+       if(n2 < Smaller)
+        Smaller = n2;
+       if(n3 < Smaller)
+        Smaller = n3;
+       if(n4 < Smaller)
+        Smaller = n4;
+       if(n5 < Smaller)
+        Smaller = n5;
+        
+
+       alert("The smaller number is: "+Smaller);
+      }
+
+      function sumValues(){
+        var sum = parseInt(greater) + parseInt(smaller);
+        alert(sum);
+    }
+
+    function pairODD(){
+        if(sum % 2 == 0){
+            alert("PAIR");
+        }
+        else{
+            alert("ODD");
+        }
+    }
+
+    function isPrime(){
+        if(sum % 2 == 1){
+            alert("Is prime");
+        }
+        else{
+            alert("Not prime");
+        }
+    }
+    </script>
+
+ </head>
+</html>
